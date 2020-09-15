@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  
+</head>
+
+<body>
+ 
+ 
+ 
+ <article id="article2" dir="rtl"> 
+
+
+ </article>
+
+ <h6 dir="rtl" id="h6">محرر اكواد </h6>
+
+  <img src ="Mhrr.jpg" alt="mohrr code " id="img1" dir="ltr">
+  <center>
+  <textarea  id="textarea1"></textarea>
+   <button id="delet">حذف الكود </button> 
+  <button id="start">تجربة الكود </button>
+
+<hr>
+<b id="ntyga">النتيجه</b>  
+<hr>
+</center>
+
+<style>
+  
+  #article2{
+  background: #B8680FF7;
+  border-radius: 10px 10px 10px 10px ;
+color: white ;
+  height: 30px ;
+}
+
+#img1{
+  width: 25px ;
+  height:25px ;
+  border-radius:50%;
+  transform: translate(9px, -96px );
+  
+}
+
+#h6{
+ color: white ;
+  transform: translate(-05px, -50px )
+  
+}
+
+#textarea1{
+  border-radius: 10px 10px 10px 10px ;
+width: 0360px ;
+height:133px;
+border-width: 2px ;
+border-color: #BF08FF;
+color:#E43D3D;
+
+}
+
+
+#start{
+  
+  border-radius: 15px 15px 15px 15px ;
+  width: 170px ;
+  background: #FF0101;
+  color: white ;
+  
+}
+#delet{
+  border-radius: 15px 15px 15px 15px ;
+  width: 170px ;
+  background: #E089FF;
+  color: white ;
+  }</style>
+
+
+
+
+
+<script>
+  
+  var start1 = document.getElementById('start');
+    delet = document.getElementById('delet');
+    text = document.getElementById('textarea1')
+    ntyga =document.getElementById('ntyga');
+
+start1.onclick=function(){
+ 
+ ntyga.innerHTML = text.value ;
+localStorage.setItem('value',textarea1.value);
+localStorage.getItem('value',textarea1.value);
+  
+} 
+
+
+delet.onclick=function(){
+  
+ ntyga.innerHTML='النتيجة'
+}
+
+onload=function(){
+  
+  text.value= localStorage.getItem('value');
+  
+}
+  
+</script>
+  <script src="main.js"></script>
+</body>
+</html>
